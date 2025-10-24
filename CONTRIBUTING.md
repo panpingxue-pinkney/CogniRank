@@ -150,7 +150,7 @@ Our current focus is on Python and zero dependencies for simplicity. Our roadmap
 
 &nbsp;   ```bash
 
-&nbsp;   git clone \[https://github.com/your-username/CogniRank.git](https://github.com/your-username/CogniRank.git)
+&nbsp;   git clone \[https://github.com/panpingxue-pinkney/CogniRank.git](https://github.com/panpingxue-pinkney/CogniRank.git)
 
 &nbsp;   ```
 
