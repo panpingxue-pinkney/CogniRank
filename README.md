@@ -110,7 +110,7 @@ Your skills and contributions are key to the project's success.
 
 1\.  \*\*Read the Guide:\*\* Please immediately check the \*\*`CONTRIBUTING.md`\*\* file to understand our \*\*structured critique data model\*\* (currently under discussion and definition).
 
-2\.  \*\*Join the Discussion:\*\* Visit the \[Issues Page](Link to your GitHub Issues Page) to participate in the architectural discussion on \*\*"How to scientifically quantify query insight."\*\*
+2\.  \*\*Join the Discussion:\*\* Visit the \[Issues Page]([Link of the Issues Page](https://github.com/panpingxue-pinkney/CogniRank/issues)) to participate in the architectural discussion on \*\*"How to scientifically quantify query insight."\*\*
 
 3\.  \*\*Fork \& PR:\*\* Fork this repository, make your changes, and submit your first Pull Request!
 
@@ -128,7 +128,7 @@ This project is licensed under the \*\*MIT License\*\*.
 
 
 
-> \*\*Project Initiator:\*\* \[panpingxue-pinkney] - \*\*Started on \[2025-10-23]\*\*
+> \*\*Project Initiator:panpingxue-pinkney Started on 2025-10-23\*\*
 
 >
 
