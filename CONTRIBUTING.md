@@ -1,164 +1,75 @@
-\# 💡 Contribution Guidelines for CogniRank: The Socratic Sequence
+## 🤝 CONTRIBUTING.md - Contribution Guide
 
+Welcome to the **CogniRank: The Socratic Sequence (Cognitive Rating)** project. Your contribution is key to defining the core value of human intelligence in the age of AI.
 
+This project aims to deconstruct complex problems into 6 Layers and 20 Structured Cognitive Sets, establishing a quantifiable and learnable critical thinking model.
 
-Welcome to \*\*CogniRank\*\*! Join us in building the ultimate critical thinking and query calibration tool for the AI era.
+---
 
+## 🎯 Our Commitment: Structured Contribution
 
+To maintain the high quality and learnability of project data, all contributions must follow a strict structural process. We do not accept unstructured text or code fragments.
 
-\*\*Our Focus: Quantifiable Insight over Quantity of Content.\*\*
+### 1. Code of Conduct
 
+All contributors are expected to adhere to the [Code of Conduct Link] (Please replace with your link). We are committed to providing an open, welcoming, and inclusive community.
 
+### 2. How to Get Started (Quick Start)
 
-\## 🚀 The Core Philosophy: Structure and Critique
+Before submitting any code or documentation, please familiarize yourself with the project's core structure:
 
+1.  **Data Authority:** Carefully review `/schemas/01_CogniRank_Schema.json` to understand the detailed data structure of the **20 Sets (Z to R)**.
+2.  **Methodology:** Understand the scoring dimensions (Depth, Consistency, Actionability) defined in `/docs/02_Scoring_Guide.md`.
+3.  **Engineering Structure:** Refer to `/engineering/07_MVP_Workflow_Diagram.md` to understand the computational dependencies of the entire process.
 
+---
 
-Unlike traditional open-source projects, your contribution must adhere to our \*\*Q-A-Critique\*\* philosophy. We are not just collecting questions; we are collecting \*\*structured critique data\*\* to evaluate cognitive depth.
+## 🚀 Types of Contributions
 
+We welcome contributions in the following three main areas:
 
+### A. Conceptual & Documentation (Docs & Methodology)
 
-\### 🎯 Key Contribution Areas (The Three Pillars)
+If you are a thinker, analyst, or technical documentation expert:
 
-
-
-| Area | Focus | Primary Goal |
-
+| File/Folder | Focus Area | Submission Guidance |
 | :--- | :--- | :--- |
+| **`/docs` folder** | Cognitive depth, scoring, user experience | Optimize wording and ensure all documentation (e.g., `02_Scoring_Guide.md`) aligns with the latest engineering implementation. |
+| **Case Study** | Practical application and validation | Submit new case studies conforming to the `/docs/03_Case_Study_Template.md` structure to enrich training data. |
+| **Dependency Logic** | Dependency optimization | Challenge the logic within `/engineering/05_Dependency_Matrix.md` or `.csv`, proposing optimal inter-Set computational paths. |
 
-| \*\*1. Knowledge Core (Data)\*\* | Philosophy \& Subject Expertise | \*\*Define and Quantify Query Insight.\*\* (The \*WHAT\* and \*WHY\* of deep thinking.) |
+**✅ Submission Steps:** Discuss your conceptual optimization for a specific Set > Fork > Modify the corresponding `.md` or `.csv` file > Submit a Pull Request.
 
-| \*\*2. Structural Engineering (Code)\*\* | Data Science \& Automation | \*\*Build the Engine\*\* for validation and AI integration. (The \*HOW\*.) |
+### B. Engineering & API (Engineering & Code)
 
-| \*\*3. Community \& Documentation\*\* | Communication \& Vision | \*\*Onboard and Evangelize\*\* the project's mission. |
+If you are a developer, architect, or MLOps engineer:
 
-
-
----
-
-
-
-\## 💻 1. Knowledge Core Contribution: The Thinker's Task
-
-
-
-This is the most critical area. We need structured data, not just free-form text.
-
-
-
-\### Submission Format
-
-
-
-All data contributions (New Queries, Critiques of existing Answers) must be submitted as \*\*YAML (`.yml`) or JSON (`.json`) files\*\*.
-
-
-
-\### Primary Task: Defining the Critique Structure
-
-
-
-Your first and most valuable contribution can be to refine our data model. We aim to \*\*Quantify Query Insight\*\* through fields like:
-
-
-
-\* `boundary\_clarity\_score` (1-5)
-
-\* `assumption\_criticality\_rating` (1-5)
-
-\* `logical\_fallacy\_detected` (Boolean or Enum)
-
-\* `rationale\_text` (The human-written critique)
-
-
-
-\*\*How to Start:\*\*
-
-1\.  Check the \*\*Issues page\*\* for the current discussion on our data structure (e.g., "Proposal for V1 Data Model").
-
-2\.  Submit a PR with an example `.yml` file that demonstrates a \*\*new, improved critique structure\*\*.
-
-
-
----
-
-
-
-\## 🔧 2. Structural Engineering Contribution: The Coder's Blueprint
-
-
-
-Your code transforms our philosophy into a functional, scalable system.
-
-
-
-| Target Skillset | Task Description | File Examples |
-
+| Focus Area | Core Files | Submission Guidance |
 | :--- | :--- | :--- |
+| **Backend API** | `/engineering/08_Backend_API_Spec.md` | Implement or optimize the RESTful endpoints, especially the validation logic for `/submit_question`. |
+| **LLM Orchestration** | `/engineering/10_Prompt_Template_Analysis.md` | Contribute code or process flows to execute the advanced LLM prompting strategies for complex Sets like G, H, P, and Q. |
+| **Frontend/Visualization** | `/docs/11_Client_Display_Wireframe.md` | Implement or optimize frontend components (e.g., Radar Charts, Causal Loop Diagrams) and their data binding. |
 
-| \*\*Data/Validation\*\* (Python) | \*\*Build the Core Validation Tool.\*\* A script to automatically check all submitted `.yml` / `.json` files against the latest data schema. | `tools/validator.py` |
+**✅ Submission Steps:** Propose a solution for a specific engineering task in Issues > Fork > Write code > Ensure compliance with CI/CD checks (if applicable) > Submit a Pull Request.
 
-| \*\*Web/API\*\* (Python/JS) | Develop a simple, lightweight API wrapper to serve the validated data. | `backend/api.py` |
+### C. Architecture & Schema (Schema & Data Structure)
 
-| \*\*Automation\*\* (Shell/GitHub Actions) | Write scripts to automate PR checks and data integrity tests. | `.github/workflows/ci.yml` |
+If you are a data scientist or architect:
 
-
-
-\### Technical Stack Outlook (Future Expansion)
-
-
-
-Our current focus is on Python and zero dependencies for simplicity. Our roadmap anticipates integrating:
-
-\* \*\*NLP \& Deep Analysis:\*\* `nltk`, `transformers` for analyzing critique text depth.
-
-\* \*\*Web Frameworks:\*\* `Flask` or `FastAPI` for serving the data via API.
-
-\* \*\*Front-end:\*\* A minimal interface (e.g., using Streamlit or a basic JS framework) to display the CogniRank metrics.
-
-
+* **Goal:** Ensure the JSON structures within the `/schemas` folder are maximally efficient and learnable.
+* **Guidance:** Any change to a Set's fields (e.g., adding, removing, or renaming) must be thoroughly discussed in Issues, as it impacts the entire system's dependencies.
 
 ---
 
+## 3. Pull Request (PR) Process
 
+1.  **Fork** the repository and clone it locally.
+2.  **Create a Branch:** Use a clear naming convention, e.g., `feature/add-set-g-validation` or `docs/fix-scoring-guide`.
+3.  **Make Your Changes** and ensure all altered files follow the defined project structure.
+4.  **Commit Standards:** Use concise and descriptive commit messages. We recommend the [Conventional Commits] (https://www.conventionalcommits.org/en/v1.0.0/) format (e.g., `feat: add new API endpoint for status query`).
+5.  **Submit PR:**
+    * **Title:** Briefly summarize your contribution.
+    * **Description:** Reference the relevant Issue ID and explain in detail what your changes do and how they solve the problem or improve the project.
+    * **Checklist:** Confirm that your changes do not break any existing schemas or dependencies.
 
-\## 🗣️ 3. Community \& Documentation: The Evangelist's Mission
-
-
-
-\* \*\*Refine Documentation:\*\* Improve clarity and tone in the `README.md` and this `CONTRIBUTING.md`.
-
-\* \*\*Translation:\*\* Help translate core documents (like this guide) into other languages.
-
-\* \*\*Course Design:\*\* Propose structured "Query Challenge" templates that adhere to our critique model.
-
-
-
----
-
-
-
-\## ✅ 5-Step Submission Process
-
-
-
-1\.  \*\*Read the Docs:\*\* Ensure your contribution aligns with the \*\*CogniRank philosophy\*\* and the current \*\*Data Model\*\* (see Issues).
-
-2\.  \*\*Fork \& Branch:\*\* `Fork` the repository and create a descriptive branch name (e.g., `feat/yaml-validator` or `data/new-query-on-bias`).
-
-3\.  \*\*Clone Locally:\*\*
-
-&nbsp;   ```bash
-
-&nbsp;   git clone \[https://github.com/panpingxue-pinkney/CogniRank.git](https://github.com/panpingxue-pinkney/CogniRank.git)
-
-&nbsp;   ```
-
-4\.  \*\*Commit Changes:\*\* Commit your files with a clear, concise commit message.
-
-5\.  \*\*Submit PR:\*\* Submit a Pull Request to our `main` branch.
-
-
-
-\*\*We prioritize PRs that include detailed explanations of how the contribution advances the goal of Quantifying Query Insight.\*\*
-
+Thank you for being part of the CogniRank community! We look forward to your profound insights and excellent contributions.

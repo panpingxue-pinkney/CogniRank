@@ -1,136 +1,50 @@
-\# 🚀 CogniRank: The Socratic Sequence (Cognitive Rating)
+# 🚀 CogniRank: The Socratic Sequence (Cognitive Rating)
 
+## ✨ Core Manifesto: Answers are Abundant, Questions are Gold.
 
+> **We refuse to be "passive information recipients" in the Age of AI.**
 
-\## ✨ Core Manifesto: Answers are Abundant, Questions are Gold.
+With the proliferation of Large Language Models (LLMs), obtaining answers has become efficient, drastically **devaluing the price of "answers,"** while the **depth and quality of "questions"** stand as humanity's most valuable and scarce asset.
 
+CogniRank is dedicated to building a **Structured Cognitive Deconstruction System** with the core objectives of:
 
-
-> \*\*We refuse to be "passive information recipients" in the Age of AI.\*\*
-
->
-
-> With the proliferation of Large Language Models (LLMs), obtaining answers has become unprecedentedly efficient and convenient. This has drastically \*\*devalued the price of "answers,"\*\* while the \*\*depth and quality of "questions"\*\* stand as humanity's most valuable and scarce asset.
-
->
-
-> \*\*CogniRank\*\* is dedicated to building a \*\*Structured Critique System\*\* with the core objectives of:
-
->
-
-> 1.  \*\*Quantifying Query Insight:\*\* Translating the critical depth, logical boundaries, and cognitive value of human questions into a structured data format that is machine-parsable and learnable.
-
-> 2.  \*\*Calibrating AI Model Bias:\*\* Accumulating human-generated, high-quality "Socratic Sequence" data to train the next generation of AI in enhanced critical reasoning and cognitive calibration.
-
-
+1.  **Quantifying Query Insight:** Translating the critical depth, logical boundaries, and cognitive value of human questions into a machine-parsable **20-Dimensional Matrix**.
+2.  **Calibrating AI Model Bias:** Accumulating high-quality, structured "Socratic Sequence" data to train the next generation of AI in enhanced critical reasoning and cognitive calibration.
 
 ---
 
+## 💡 Project Vision: Quantifying the Art of Thinking
 
+The entire CogniRank project revolves around a matrix of **6 Layers** and **20 Cognitive Sets (Z to R)** that meticulously deconstructs any complex input query.
 
-\## 💡 Project Philosophy: From "Feeding" to "Mutual Advancement"
+This repository is the **definitive, English-first, open-source standard** for defining, scoring, and implementing this Socratic Sequence.
 
+## ⚙️ Repository Structure (For Global Contributors)
 
+To maximize clarity and minimize cognitive load for new contributors, the project files are organized by functional area. Please explore the directories below based on your area of expertise:
 
-Our workflow centers on the \*\*Q-A-Critique (Question-Answer-Critique)\*\* loop, upgrading human-machine interaction:
-
-
-
-\* \*\*Humans (Questioners/Critics):\*\* Responsible for defining problem boundaries, challenging logical fallacies, and proposing new cognitive dimensions.
-
-\* \*\*AI (Future Beneficiaries):\*\* Learning the human process of \*\*"how to think,"\*\* rather than just accumulating simple facts, from our structured data.
-
-\* \*\*This Project:\*\* Serves as an \*\*open-source stronghold\*\* for maintaining the primacy of human intellect in the AI era.
-
-
-
-\## 🎯 Core Work Goal: Quantifying Query Insight
-
-
-
-\*\*This work is the focus of all our contributors!\*\*
-
-
-
-Our goal is not merely to collect questions, but to attach a \*\*quantifiable CogniRank metric\*\* to every query. We invite contributors to:
-
-
-
-1\.  \*\*Define the Quantification Model:\*\* Collaborate to design a scientific \*\*YAML/JSON data structure\*\* using fields and scores to assess question depth (e.g., `boundary\_clarity\_score`, `assumption\_criticality\_rating`).
-
-2\.  \*\*Data Curation:\*\* Submit high-value \*\*questions and critique data\*\* that conform to this model, making them core assets for future AI training.
-
-
-
-\## 🤝 Contributor Roles: Pioneers of the Socratic Sequence
-
-
-
-Your skills and contributions are key to the project's success.
-
-
-
-\### 1. Knowledge Core Contributor (The Thinker)
-
-
-
-\* \*\*Skills:\*\* Domain expertise, philosophical critical thinking, excellent written expression.
-
-\* \*\*Tasks:\*\* Submit examples of \*\*structured queries\*\* and conduct in-depth \*\*critiques\*\* of existing knowledge points.
-
-
-
-\### 2. Structural Engineering Contributor (The Coder)
-
-
-
-\* \*\*Skills:\*\* Python (recommended), data validation, API design, MLOps.
-
-\* \*\*Tasks:\*\* Build \*\*data format validation tools\*\* and design a \*\*data flow architecture\*\* easily readable by AI.
-
-
-
-\### 3. Community Governance \& Documentation (The Evangelist)
-
-
-
-\* \*\*Skills:\*\* Technical writing, community management, outreach, and communication.
-
-\* \*\*Tasks:\*\* Refine `CONTRIBUTING.md`, clearly articulate the project's philosophy, and attract more deep thinkers.
-
-
+| Folder | Focus Area | Key Documents & Purpose | Target Contributor |
+| :--- | :--- | :--- | :--- |
+| **`/schemas`** | **Data Authority** | `01_CogniRank_Schema.json`, `09_Analysis_Output_Schema.json`: Defines the **20 Sets** structure and the final report output. | Structural Engineering, Data Modeling |
+| **`/engineering`** | **Implementation** | `08_Backend_API_Spec.md`, `06_Tooling_Plan.md`, `07_MVP_Workflow_Diagram.md`: Details the execution flow, API, and technology stack for the MVP. | Backend/API Developers, ML Engineers |
+| **`/docs`** | **Methodology & UX** | `02_Scoring_Guide.md`, `10_Prompt_Template_Analysis.md`, `11_Client_Display_Wireframe.md`: Explains the scoring rules, prompting strategies, and front-end visualization goals. | Technical Writers, AI/LLM Experts, UX/UI Designers |
+| **Root** | **High-Level Strategy** | `README.md`, `CONTRIBUTING.md`: Core philosophy and contribution guidelines. | All Contributors |
 
 ---
 
+## 🎯 Core Work Goal: Completing the 20-Set Implementation
 
+Our immediate focus is on converting the **structured documentation** within this repository into a **functional, validated MVP**. We invite contributors to help us:
 
-\## 🔧 Quick Start Guide
+1.  **Validate Schemas & Scores:** Ensure the rules in `/schemas` and `/docs/02_Scoring_Guide.md` are logically consistent and robust.
+2.  **Build the Orchestrator:** Implement the core flow described in `/engineering/07_MVP_Workflow_Diagram.md` using the tooling defined in `/engineering/06_Tooling_Plan.md`.
+3.  **Refine Prompt Strategies:** Contribute to the advanced prompting logic in `/engineering/10_Prompt_Template_Analysis.md` to ensure high-quality, structured output from LLMs for complex Sets (G, H, P, Q).
 
+## 🤝 Contributor Roles: Pioneers of the Socratic Sequence
 
+## Academic Foundation & Attribution
 
-1\.  \*\*Read the Guide:\*\* Please immediately check the \*\*`CONTRIBUTING.md`\*\* file to understand our \*\*structured critique data model\*\* (currently under discussion and definition).
+The CogniRank framework is grounded in research concerning structured reasoning and metacognition in AI systems. For a deeper understanding of the underlying theory, please refer to our foundational papers:
 
-2\.  \*\*Join the Discussion:\*\* Visit the \[Issues Page]([Link of the Issues Page](https://github.com/panpingxue-pinkney/CogniRank/issues)) to participate in the architectural discussion on \*\*"How to scientifically quantify query insight."\*\*
-
-3\.  \*\*Fork \& PR:\*\* Fork this repository, make your changes, and submit your first Pull Request!
-
-
-
-\## ⚖️ Open Source License
-
-
-
-This project is licensed under the \*\*MIT License\*\*.
-
-
-
----
-
-
-
-> \*\*Project Initiator:panpingxue-pinkney Started on 2025-10-23\*\*
-
->
-
-> \*"Start from zero, with the end in mind; together, we define humanity's core value in the Age of AI."\*
-
+* **Cognitive Depth Metric in Human-AI Collaborative Reasoning** (Zenodo Link: [(https://doi.org/10.5281/zenodo.17505317)])
+* **Proof of Thought (PoT)** (Zenodo Link: [(https://zenodo.org/records/17505798)])
